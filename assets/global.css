@@ -1,0 +1,10 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+.layout {
+  background-color: #496172;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 16px 16px;
+}
