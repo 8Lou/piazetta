@@ -1,16 +1,17 @@
 <template>
   <div>
     <h1 class='text-white'>УСЛУГИ</h1>
-        <button>Вызвать официанта</button>
+        <button @click="ToPage">Вызвать официанта</button>
 
-    <NavbarItem/>
   </div>
 </template>
 
 <script>
-import NavbarItem from "./NavbarItem.vue";
-
 export default {
-  name: "Main",
-};
+  methods: {
+    ToPage() {
+      this.$router.push('/page1');
+    },
+  }
+}
 </script>

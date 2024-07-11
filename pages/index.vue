@@ -1,11 +1,14 @@
 <template>
   <div class='services-container'>
     <Main />
-      <ul class="list-none">
-        <li><nuxt-link to="/main">Главная</nuxt-link></li>
-        <li><nuxt-link to="/orders">Мои заказы</nuxt-link></li>
-      </ul>
-   
+
+    <footer>
+      <div>
+        <button>Главная</button>
+        <button>Мои заказы</button>
+      </div>
+    </footer>
+
   </div>
 </template>
 
@@ -29,11 +32,4 @@ export default {
   justify-content: center;
   align-items: center;
 }
-.list-none {
-  display: flex;
-  justify-content: space-between;
-  text-decoration: none; 
-  list-style-type: none;
-  
-  }
 </style>
