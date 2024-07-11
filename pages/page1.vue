@@ -1,5 +1,5 @@
 <template>
-    <div class='container'>
+    <div class=''>
     <TheForm />
     <TheFooter />
   </div>
@@ -14,22 +14,5 @@ export default {
     TheForm,
     TheFooter,
   },
-
-  data() {
-    return {
-      formData: {
-        name: '',
-        phone: '',
-        location: '',
-        comment: ''
-      }
-    };
-  },
-  methods: {
-    submitForm() {
-      // добавить логику для отправки данных формы
-      console.log('Отправка формы', this.formData);
-    }
-  }
 }
 </script>

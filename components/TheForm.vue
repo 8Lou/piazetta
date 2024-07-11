@@ -2,12 +2,12 @@
   <div class='container'>
     <span>
         <h1>
-          Вызов       
+          ВЫЗОВ       
         </h1>
       </span>
       <span>       
         <h1>
-          официанта
+          ОФИЦИАНТА
         </h1>
     </span>
 
@@ -24,7 +24,7 @@
       <label for="comment">Комментарий:</label>
       <textarea id="comment" v-model="formData.comment"></textarea><br><br>
 
-      <button type="submit">Вызвать</button>
+      <button type="submit" class="button">Вызвать</button>
     </form>
     </div>
 </template>
@@ -60,3 +60,8 @@ export default {
   }
 }
 </script>
+<style scoped>
+.button{
+  background-color: #E7BDA6;
+}
+</style>

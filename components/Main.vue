@@ -1,8 +1,7 @@
 <template>
   <div>
-    <h1 class=''>УСЛУГИ</h1>
-        <button @click="ToPage">Вызвать официанта</button>
-
+    <h1 class="">УСЛУГИ</h1>
+    <button class="button" @click="ToPage">Вызвать официанта</button>
   </div>
 </template>
 
@@ -10,8 +9,8 @@
 export default {
   methods: {
     ToPage() {
-      this.$router.push('/page1');
+      this.$router.push("/page1");
     },
-  }
-}
+  },
+};
 </script>
