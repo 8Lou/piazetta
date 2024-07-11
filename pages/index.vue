@@ -1,29 +1,24 @@
 <template>
-  <div class='services-container'>
+  <div class='container'>
     <Main />
-
-    <footer>
-      <div>
-        <button>Главная</button>
-        <button>Мои заказы</button>
-      </div>
-    </footer>
-
+    <TheFooter />
   </div>
 </template>
 
 <script>
 import Main from "../components/Main.vue";
+import TheFooter from "../components/TheFooter.vue";
 
 export default {
   components: {
     Main,
+    TheFooter,
   },
 };
 </script>
 
 <style scoped>
-.services-container {
+.container {
   width: 393px;
   height: 852px;
   background-color: #496172;

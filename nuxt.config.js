@@ -36,14 +36,14 @@ export default {
     extendRoutes(routes, resolve) {
       routes.push(
         {
-          name: 'page1',
-          path: '/page1',
-          component: resolve(__dirname, 'pages/page1.vue')
+          name: "page1",
+          path: "/page1",
+          component: resolve(__dirname, "pages/page1.vue"),
         },
         {
-          name: 'page2',
-          path: '/page2',
-          component: resolve(__dirname, 'pages/page2.vue')
+          name: "index",
+          path: "/index",
+          component: resolve(__dirname, "pages/index.vue"),
         }
       );
     }
