@@ -41,8 +41,8 @@ export default {
           component: resolve(__dirname, "pages/page1.vue"),
         },
         {
-          name: "index",
-          path: "/index",
+          name: "",
+          path: "/",
           component: resolve(__dirname, "pages/index.vue"),
         }
       );

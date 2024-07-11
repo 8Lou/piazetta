@@ -1,6 +1,15 @@
 <template>
   <div class='container'>
-    <h1>Вызов официанта</h1>
+    <span>
+        <h1>
+          Вызов       
+        </h1>
+      </span>
+      <span>       
+        <h1>
+          официанта
+        </h1>
+    </span>
 
     <form @submit.prevent="submitForm">
       <label for="name">Имя:</label>
@@ -32,10 +41,21 @@ export default {
       }
     };
   },
-  methods: {
-    submitForm() {
-      // добавить логику для отправки данных формы
-      console.log('Отправка формы', this.formData);
+   methods: {
+    async submitForm() {
+      try {
+        const response = await fetch('https://webhook.site/994c8d78-82a5-4981-bc1a-3f00cfea293f', {
+          method: 'POST', 
+          headers: {
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify(this.formData)
+        });
+        const responseData = await response.json();
+        console.log('Данные успешно отправлены', responseData);
+      } catch (error) {
+        console.error('Произошла ошибка при отправке данных', error);
+      }
     }
   }
 }

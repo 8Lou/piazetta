@@ -16,15 +16,3 @@ export default {
   },
 };
 </script>
-
-<style scoped>
-.container {
-  width: 393px;
-  height: 852px;
-  background-color: #496172;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-</style>

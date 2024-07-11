@@ -2,6 +2,11 @@
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; 
+}
 .layout {
   background-color: #496172;
   background-position: center;
@@ -16,4 +21,24 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+@font-face {
+  font-family: 'Journal Sans New';
+  src: url('/assets/fonts/JournalSansNew.ttf') format('ttf');
+}
+h1, h2, h3 {
+  font-family: 'JournalSansNew', sans-serif; 
+  color: #F4F1ED;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 39px;
+  letter-spacing: 0.05em;
+  text-align: center;
+}
+.button{
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 25px;
+  text-align: center;
+  color: #F4F1ED;
 }

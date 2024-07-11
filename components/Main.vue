@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1 class='text-white'>УСЛУГИ</h1>
+    <h1 class=''>УСЛУГИ</h1>
         <button @click="ToPage">Вызвать официанта</button>
 
   </div>
