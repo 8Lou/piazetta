@@ -38,6 +38,7 @@ export default {
   height: 83px;
   padding: 15px;
   gap: 8px;
+  z-index: 2;
 }
 .footer_content {
   display: flex;

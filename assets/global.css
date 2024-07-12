@@ -1,7 +1,7 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box; 
+  box-sizing: border-box;
 }
 .layout {
   background-color: #496172;
@@ -19,26 +19,27 @@
   padding-top: 39px;
 }
 @font-face {
-  font-family: 'Journal Sans New';
-  src: url('/assets/fonts/JournalSansNew.ttf') format('ttf');
+  font-family: "Journal Sans New";
+  src: url("/assets/fonts/JournalSansNew.ttf") format("ttf");
 }
-h1{
-  font-family: 'JournalSansNew', sans-serif; 
-  color: #F4F1ED;
+h1 {
+  font-family: "JournalSansNew", sans-serif;
+  color: #f4f1ed;
   font-size: 32px;
   font-weight: 400;
   line-height: 39px;
   text-align: center;
   letter-spacing: 0.07em;
 }
-h2{
-  font-family: 'JournalSansNew', sans-serif; 
-  color: #F4F1ED;
+h2,
+::placeholder {
+  font-family: "JournalSansNew", sans-serif;
+  color: #f4f1ed;
   font-size: 18px;
   font-weight: 400;
   letter-spacing: 0.08em;
 }
-.button{
+.button {
   font-size: 18px;
   font-weight: 400;
   line-height: 25px;
@@ -55,10 +56,41 @@ h2{
   padding: 16px, 32px, 16px, 32px;
   margin-top: 20px;
 }
-.icon{
+.icon {
   width: 24px;
   height: 24px;
   margin: 4px;
 }
-
-
+label {
+  font-family: "JournalSansNew", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: center;
+  color: rgba(244, 241, 237, 0.6);
+  letter-spacing: 0.08em;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 40px;
+}
+input {
+  background-color: #496172;
+  border: none;
+  margin-top: 20px;
+  width: 363px;
+  border-bottom: 1px solid rgba(244, 241, 237, 0.2);
+  padding-bottom: 20px;
+  font-size: 18px;
+}
+textarea {
+  width: 363px;
+  background-color: #496172;
+  border: none;
+  margin-top: 20px;
+  color: rgba(244, 241, 237, 0.6);
+  border-bottom: 1px solid rgba(244, 241, 237, 0.2);
+  padding-bottom: 39px;
+}

@@ -13,17 +13,13 @@
 
     <form @submit.prevent="submitForm">
       <label for="name">Имя:</label>
-      <input type="text" id="name" v-model="formData.name" required><br><br>
-
+      <input placeholder='Константинов Константин' type="text" id="name" v-model="formData.name" required><br>
       <label for="phone">Телефон:</label>
-      <input type="tel" id="phone" v-model="formData.phone" required><br><br>
-
+      <input placeholder='+7 (...) ... - .. - ..' type="tel" id="phone" v-model="formData.phone" required><br>
       <label for="location">Локация:</label>
-      <input type="text" id="location" v-model="formData.location" required><br><br>
-
+      <input placeholder='Piazetta' type="text" id="location" v-model="formData.location" required><br>
       <label for="comment">Комментарий:</label>
-      <textarea id="comment" v-model="formData.comment"></textarea><br><br>
-
+      <textarea placeholder='Введите текст сообщения...' id="comment" v-model="formData.comment"></textarea><br>
       <button type="submit" class="button">Вызвать</button>
     </form>
     </div>
