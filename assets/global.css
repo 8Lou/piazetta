@@ -34,7 +34,7 @@ h1 {
   font-size: 32px;
   line-height: 39px;
   text-align: center;
-  letter-spacing: 0.02em;
+  letter-spacing: 0.1em;
 }
 h2,
 ::placeholder {
@@ -44,6 +44,7 @@ h2,
   letter-spacing: 0.05em;
 }
 .button {
+  font-family: var(--main-font);
   font-size: 18px;
   line-height: 25px;
   text-align: center;
@@ -58,7 +59,7 @@ h2,
   border-radius: 12px;
   border: none;
   padding: 16px, 32px, 16px, 32px;
-  margin-top: 10px;
+  margin-top: 4px;
 }
 .icon {
   width: 24px;
@@ -72,6 +73,7 @@ label {
   text-align: center;
   color: rgba(244, 241, 237, 0.6);
   letter-spacing: 0.02em;
+  margin-top: -10px;
 }
 form {
   display: flex;
@@ -83,17 +85,16 @@ input {
   background-color: var(--main-background);
   border: none;
   margin-top: 10px;
+  padding-bottom: 16px;
   width: 363px;
   border-bottom: 1px solid rgba(244, 241, 237, 0.2);
-  padding-bottom: 20px;
   font-size: 18px;
 }
 textarea {
   width: 363px;
   background-color: var(--main-background);
   border: none;
-  margin-top: 20px;
-  color: rgba(244, 241, 237, 0.6);
-  border-bottom: 1px solid rgba(244, 241, 237, 0.2);
-  padding-bottom: 39px;
+  margin-top: 10px;
+  border-bottom: 1px solid rgba(244, 241, 237, 0.4);
+  padding-bottom: 30px;
 }

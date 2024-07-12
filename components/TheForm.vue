@@ -19,7 +19,7 @@
       <label for="location">Локация</label>
       <input placeholder='Piazetta' type="text" id="location" v-model="formData.location" required><br>
       <label for="comment">Комментарий</label>
-      <textarea placeholder='Введите текст сообщения...' id="comment" v-model="formData.comment"></textarea><br>
+      <textarea class='textarea' placeholder='Введите текст сообщения...' id="comment" v-model="formData.comment"></textarea><br>
       <button type="submit" class="button">Вызвать</button>
     </form>
     </div>
@@ -59,5 +59,8 @@ export default {
 <style scoped>
 .button{
   background-color: #E7BDA6;
+}
+.textarea{
+  opacity: 0.5;
 }
 </style>
