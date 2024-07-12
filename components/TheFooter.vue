@@ -29,6 +29,7 @@ export default {
 <style scoped>
 .footer {
   border-top: 1px solid rgba(244, 241, 237, 0.2);
+  background-color: var(--main-background);
   display: flex;
   justify-content: space-around;
   align-items: center;
